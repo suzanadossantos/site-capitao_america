@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site sobre o Capitão América!">
+    <title>Capitão América</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/logo-escudo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="imagens/logo-escudo.png" alt="logo do escudo">
+        <input type="search" name="pesquisa" id="pesq">
+        <nav>
+            <a href="#">Filmes</a>
+            <a href="#">Séries</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="con1">
+            <div id="cap">
+                <h1>Capitão América</h1>
+                <h2>Steve Rogers</h2>
+            </div>
+            
+            <img src="imagens/capitao.png" alt="imagem do capitão">
+        </div>
+        
+
+        <div class="filmes">
+            <h2 class="bloco">Filmes</h2>
+            <div class="cont">
+                <img src="imagens/filme-ultron.png" alt="filme era de ultron">
+                <img src="imagens/filme-cap.png" alt="filme capitão américa">
+                <img src="imagens/filme-guerra.png" alt="filme guerra civil">
+                <img src="imagens/filme-cap2.png" alt="filme capitão américa">
+            </div>
+        </div>
+
+        <div class="hist">
+            <div class="cont">
+                <h2>História</h2>
+                <p>O Capitão fez parte de um movimento patriota que trazia super-heróis, principalmente, atuando na Segunda Guerra Mundial. <br><br> Seu sonho era servir os Estados Unidos na luta contra os nazistas. Mas, ele só conseguiu suas habilidades graças aos efeitos do soro de Supersoldado. Onde ganhou músculos e alta estatura, quase que imediatamente...</p>
+            </div>
+
+            <img src="imagens/escudo.png" alt="escudo">
+        </div>
+        
+
+        <div class="calculadora">
+            <h2>Idade do Capitão América</h2>
+            <p>Coloque o ano que você deseja saber qual idade o Capitão teria ou tinha.</p>
+            <input type="number" name="ano" id="ano" placeholder="Ano" >
+            <button type="submit" id="ok" onclick="cal()">Ok</button>
+            <div class="res"></div>
+        </div>
+
+        <div class="quadr">
+            <h2>Quadrinhos</h2>
+            <div class="cont">
+                <img src="imagens/quadrinho1.png" alt="quadrinho">
+                <img src="imagens/quadrinho2.png" alt="quadrinho">
+                <img src="imagens/quadrinho3.png" alt="quadrinho">
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por <span>Suzana dos Santos</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
