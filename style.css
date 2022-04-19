@@ -271,8 +271,14 @@ footer{
     font-size: 20px;
 }
 
-footer p span{
+footer p a{
     font-family: var(--fonte-secundaria);
+    color: var(--azul);
+}
+
+footer p a:hover{
+    color: var(--vermelho);
+    transition: 2ms;
 }
 
 @media screen and (max-width: 850px){
