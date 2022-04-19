@@ -20,6 +20,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    overflow-x : hidden;
 }
 
 ::selection{
@@ -41,7 +42,7 @@ header{
     align-items: center;
     justify-content: space-around;
     gap: 20px;
-    margin: 20px 50px;
+    margin: 20px 30px;
 }
 
 header img{
@@ -52,7 +53,7 @@ header input{
     border: 2.5px solid;
     border-radius: 5px;
     border-color: var(--preto);
-    width: 50%;
+    width: 40%;
     height: 36px;
     padding: 10px;
     color: var(--azul);
@@ -60,14 +61,15 @@ header input{
 }
 
 header nav {
-    font-size: 20px;
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    justify-content: center;
+    gap: 10px;
 }
 
 header nav a{
     color: var(--preto);
+    font-size: 1.2em;
 }
 
 header nav a:hover{
@@ -93,7 +95,7 @@ main div.con1{
 }
 
 main div.con1 h1{
-    font-size: 50px;
+    font-size: 40px;
     color: var(--preto);
     font-family: var(--fonte-principal);
     font-weight: 400;
@@ -152,18 +154,21 @@ main div.hist{
     align-items: center;
     justify-content: space-around;
     gap: 20px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px;
+}
+
+main div.hist img{
+    width: 30%;
 }
 
 main div.hist div.cont h2{
-   padding-bottom: 20px;
+   margin: 20px;
    font-family: var(--fonte-principal);
    font-size: 30px;
 }
 
 main div.hist div.cont p{
-    width: 450px;
+    margin: 20px;
     font-family: var(--fonte-secundaria);
     font-size: 24px;
 }
@@ -271,8 +276,13 @@ footer p span{
 }
 
 @media screen and (max-width: 850px){
+    header{
+        
+    }
+
     main div.con1 h1, h2{
-        margin-left: 20px;
+        margin-left: 10px;
+        font-size: 2.4rem;
     }
 
     main div.filmes div.cont{
@@ -287,11 +297,27 @@ footer p span{
         width: 300px;
     }
 
+    main div.filmes h2{
+        text-align: center;
+    }
+
     main div.hist{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
+    }
+
+    main div.hist div.cont p{
+        font-size: 1em;
+    }
+
+    main div.hist h2{
+        text-align: center;
+    }
+
+    main div.quadr{
+        text-align: center;
     }
 
     main div.quadr div.cont{
